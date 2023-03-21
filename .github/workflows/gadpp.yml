@@ -17,6 +17,8 @@ jobs:
       - shell: bash
         run: |
           df -h
+          lsblk
+          uname -a
       - name: Checkout
         uses: actions/checkout@v2
 #      - name: Push updates to your profile page
