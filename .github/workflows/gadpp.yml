@@ -7,8 +7,8 @@ jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
-      - name: Event
-        run: echo "Triggered by: $GITHUB_EVENT_NAME"
+      #- name: Event
+      #  run: echo "Triggered by: $GITHUB_EVENT_NAME"
       - name: Say Hello
         run: echo "Hello world!"
       - shell: bash
