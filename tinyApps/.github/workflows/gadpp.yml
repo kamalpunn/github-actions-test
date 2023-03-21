@@ -1,5 +1,7 @@
-on: [push]
-
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
   gadpp_job:
     runs-on: ubuntu-latest
@@ -8,8 +10,8 @@ jobs:
       - shell: bash
         run: |
           date > output.log
-      #- name: Checkout
-      #  uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 #      - name: Push updates to your profile page
 #        uses: umutphp/github-action-dynamic-profile-page@v2
 #        id: gadpp
