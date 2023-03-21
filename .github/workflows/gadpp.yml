@@ -1,14 +1,13 @@
+name: my first Workflow
 on:
   push:
     branches:
       - main
 jobs:
   gadpp_job:
-    name: My first job
+    name: My first job in workflow for github actions
     runs-on: ubuntu-latest
     steps:
-      #- name: Event
-      #  run: echo "Triggered by: $GITHUB_EVENT_NAME"
       - name: Say Hello
         run: echo "Hello world!"
       - shell: bash
