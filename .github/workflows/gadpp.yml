@@ -1,4 +1,4 @@
-name: my first Workflow
+name: my first Workflow in github actions
 on:
   push:
     branches:
