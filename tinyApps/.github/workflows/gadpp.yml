@@ -4,7 +4,7 @@ on:
       - main
 jobs:
   gadpp_job:
-    runs-on-kamal: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Event
         run: echo "Triggered by: $GITHUB_EVENT_NAME"
