@@ -4,6 +4,7 @@ on:
       - main
 jobs:
   gadpp_job:
+    name: My first job
     runs-on: ubuntu-latest
     steps:
       - name: Event
