@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  gadpp_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Event
+        run: echo "Triggered by: $GITHUB_EVENT_NAME"
+      - name: Say Hello
+        run: echo "Hello world!"
+      - shell: bash
+        run: |
+          date > output.log
+      - shell: bash
+        run: |
+          df -h
+      - name: Checkout
+        uses: actions/checkout@v2
+#      - name: Push updates to your profile page
+#        uses: umutphp/github-action-dynamic-profile-page@v2
+#        id: gadpp
+#        env:
+#          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          github-username: 'dat-adi'
+#          user-email: 'dat.adithya@gmail.com'
